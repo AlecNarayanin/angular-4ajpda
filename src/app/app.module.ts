@@ -12,13 +12,13 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
+    CommonModule,
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent }
-    ]),
-    CommonModule
+    ])
   ],
   declarations: [
     AppComponent,
